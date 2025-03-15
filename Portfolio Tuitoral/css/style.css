@@ -5,6 +5,7 @@
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#f2f2f2;
+    --secondary:#070606;
 
 }
 body{
@@ -78,3 +79,209 @@ header nav .branding{
 .hero .right {
     margin-bottom:2rem;
 }
+section{
+    padding: 6rem 0;
+}
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Adjust the gap as needed */
+}
+
+.about .container .flex-1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: 20px; /* Ensures spacing */
+}
+
+.about .container .flex-1 p {
+    text-align: justify;
+    line-height: 1.6;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+.branding img {
+    height: 50px; /* Adjust logo size */
+}
+
+.branding a {
+    font-size: 18px; /* Adjust size */
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a {
+    font-size: 18px; /* Ensure all links are the same size */
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav .right .btn {
+    font-size: 16px;
+}
+section{
+    padding:6rem 0;
+
+}
+section.about .about-me-img{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size:1.6 rem;
+    font-weight:400;
+}
+section.about h1 span{
+    color:var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom:1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family:'lato', sans-serif;
+    color:var(--ternary);
+    line-height: 1.9;
+}
+section.about .section{
+    display:flex;
+
+}
+.social {
+    margin-top: 20px;
+}
+
+.social a {
+    font-size: 28px;
+    color: #333;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+/* Social Media Icons */
+.social {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Adds spacing between icons */
+}
+
+.social a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary); /* Primary background color */
+    color: white; /* Icon color */
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.social a:hover {
+    background-color: #2da8ac; /* Slightly darker primary color */
+}
+
+/* Click (Active) Effect */
+.social a:active {
+    background-color: white;
+    color: var(--primary); /* Icon changes to primary color */
+}
+.section-heading{
+    color:var(--secondary); 
+    text-align: center;
+    margin-bottom:1rem;
+    line-height: 0.5;
+} 
+.section-heading span{
+    color:var(--primary);
+}
+.section-heading+p{
+    color:var(--ternary);
+    font-family:'Lato', sans-serif;
+    margin-bottom:6rem;
+    text-align: center;
+}
+section.services {
+    background: var(--light);
+    padding: 6rem 0;
+}
+
+section.services .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem; /* Uniform spacing */
+    justify-content: center;
+}
+
+section.services .card {
+    background: var(--pure);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section.services .card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+section.services .card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+section.services .card h3 {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+section.services .card p {
+    font-size: 1rem;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    section.services .card-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    section.services .card-wrapper {
+        grid-template-columns: repeat(1, 1fr); /* One column for mobile screens */
+    }
+}
+section.services .card-wrapper .card:hover {
+    background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2, 
+section.services .card-wrapper .card:hover p {
+    color: var(--pure);
+}
+
+/* Ensure "Programming" text is always white on hover */
+section.services .card-wrapper .card:hover h2 span {
+    color: var(--pure);
+}
+
